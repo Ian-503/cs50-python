@@ -11,7 +11,7 @@ except ValueError:
     sys.exit("Command-line argument is not a number")
 
 try:
-    bitcoin = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=486e723d6af6140540af39b040900ffd089df13922a781ea788de78793ac25d4")
+    bitcoin = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey={SUA CHAVE}")
     preco = bitcoin.json()
     preco_bitcoin = float(preco["data"]["priceUsd"])
 
